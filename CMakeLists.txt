@@ -3,4 +3,4 @@ project(ex01)
 
 set(CMAKE_CXX_STANDARD 98)
 
-add_executable(ex01 main.cpp Contact.cpp Contact.hpp)
+add_executable(ex01 main.cpp Contact.cpp Contact.hpp PhoneBook.cpp PhoneBook.hpp)

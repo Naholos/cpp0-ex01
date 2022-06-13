@@ -1,35 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Contact.hpp                                        :+:      :+:    :+:   */
+/*   PhoneBook.hpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: aoteo-be <aoteo-be@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/04/06 19:11:28 by aoteo-be          #+#    #+#             */
-/*   Updated: 2022/06/06 20:54:47 by aoteo-be         ###   ########.fr       */
+/*   Created: 2022/13/06 21:00:28 by aoteo-be          #+#    #+#             */
+/*   Updated: 2022/13/06 21:15:47 by aoteo-be         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef EX01_CONTACT_H
-#define EX01_CONTACT_H
+#ifndef EX01_PHONEBOOK_HPP
+#define EX01_PHONEBOOK_HPP
 
-# include <iomanip>
-# include <iostream>
-# include <string>
+#include "Contact.hpp"
 
-void fix_string(std::string str);
-
-class Contact
+class PhoneBook
 {
 	public:
-			Contact();
-			~Contact();
-			std::string index;
-			std::string first_name;
-			std::string last_name;
-			std::string nickname;
-			std::string phone;
-			std::string darkest_secret;
+		Contact	contacts[9];
+		PhoneBook();
+		~PhoneBook();
+		void ADD(int counter);
+		void SEARCH();
 };
 
 #endif

@@ -61,6 +61,12 @@ build CMakeFiles/ex01.dir/Contact.cpp.o: CXX_COMPILER__ex01_Debug /home/antonio/
   OBJECT_DIR = CMakeFiles/ex01.dir
   OBJECT_FILE_DIR = CMakeFiles/ex01.dir
 
+build CMakeFiles/ex01.dir/PhoneBook.cpp.o: CXX_COMPILER__ex01_Debug /home/antonio/ex01/PhoneBook.cpp || cmake_object_order_depends_target_ex01
+  DEP_FILE = CMakeFiles/ex01.dir/PhoneBook.cpp.o.d
+  FLAGS = -g -std=gnu++98
+  OBJECT_DIR = CMakeFiles/ex01.dir
+  OBJECT_FILE_DIR = CMakeFiles/ex01.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ex01
@@ -69,7 +75,7 @@ build CMakeFiles/ex01.dir/Contact.cpp.o: CXX_COMPILER__ex01_Debug /home/antonio/
 #############################################
 # Link the executable ex01
 
-build ex01: CXX_EXECUTABLE_LINKER__ex01_Debug CMakeFiles/ex01.dir/main.cpp.o CMakeFiles/ex01.dir/Contact.cpp.o
+build ex01: CXX_EXECUTABLE_LINKER__ex01_Debug CMakeFiles/ex01.dir/main.cpp.o CMakeFiles/ex01.dir/Contact.cpp.o CMakeFiles/ex01.dir/PhoneBook.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/ex01.dir
   POST_BUILD = :

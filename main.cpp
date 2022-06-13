@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include "Contact.hpp"
+#include "PhoneBook.hpp"
 
 void fix_string(std::string str)
 {
@@ -21,7 +22,7 @@ void fix_string(std::string str)
 
 int main()
 {
-	Contact		contact[9];
+	PhoneBook	phonebook;
 	int			i;
 	std::string	line;
 
@@ -33,11 +34,11 @@ int main()
 		std::cin >> line;
 		if (line == "ADD")
 		{
-			contact[i].ADD(i);
+			phonebook.ADD(i);
 			i++;
 		}
 		else if (line == "SEARCH")
-			Contact::SEARCH(contact);
+			phonebook.SEARCH();
 		else if (line == "EXIT")
 			break ;
 		else
